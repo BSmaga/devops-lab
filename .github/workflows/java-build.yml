@@ -12,6 +12,10 @@ jobs:
   build-java:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: rest-service
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
